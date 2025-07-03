@@ -1,0 +1,42 @@
+{
+  "name": "grabit",
+  "version": "1.0.0",
+  "description": "food delivery app",
+  "main": "./App.js",
+  "targets": {
+    "default": {
+      "source": "./index.html",
+      "distDir": "./output"
+    },
+    "main": false
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishat-arif/grabIt.git"
+  },
+  "keywords": [
+    "foodDeliveryApp"
+  ],
+  "author": "Nishat Arif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishat-arif/grabIt/issues"
+  },
+  "homepage": "https://github.com/nishat-arif/grabIt#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions"
+  ]
+}
