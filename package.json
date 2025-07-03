@@ -11,6 +11,8 @@
     "main": false
   },
   "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
