@@ -1,2 +1,2 @@
-This si a food delivery application built using React( a javascript library). 
+This is a food delivery application built using React( a javascript library). 
 
