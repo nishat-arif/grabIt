@@ -1,27 +1,38 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { LOGO_URL } from "./utils/constants";   
 
-//React element
-const Title = () => (<h1 id="title">Title Component</h1>);
 
-// react functional component
-const HeadingComponent = () => {
-    return (<div id="container">
-                <Title />
-                <h1 id="heading">
-                 functional Component 
-                </h1>
-            </div>
+
+
+const HeaderComponent = () => {
+    return (
+        <div className="header">
+          <div className="logo">
+            <img src={LOGO_URL} alt="GrabIt Logo" />
+        </div>
+        <div className="navItems">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Cart</li>
+            </ul>
+        </div>
+        </div>
     );
-};   
-
-//const HeadingComponent2 = () => <h1 id="heading">Hello World from functional Component </h1>;
-//const HeadingComponent2 = () => (<h1 id="heading">Hello World from functional Component </h1>);
+}
 
 
+const App =()=>{
+    return (
+        <div className="app">
+            <HeaderComponent />
+        
+        </div>
+    );
+}
 
+const root= ReactDOM.createRoot(document.getElementById("root"));
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<HeadingComponent />);
-// root.render(<HeadingComponent></HeadingComponent>);
-root.render(HeadingComponent());
+root.render(<App/>);
